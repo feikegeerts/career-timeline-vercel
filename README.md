@@ -1,6 +1,6 @@
 # Meal Maestro
 
-> AI-powered recipe management — organize, discover, and chat with your recipes.
+> AI-powered recipe management — organize, discover, and chat with your recipes. Currently running on vercel.
 
 **Stack**: Next.js 16 · Neon · OpenAI · TypeScript
 
