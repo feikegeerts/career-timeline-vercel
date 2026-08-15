@@ -83,6 +83,8 @@ export async function createChatCompletion(
       messages,
       tools,
       tool_choice: toolChoice || (tools ? "auto" : undefined),
+      // Chat Completions only permits this model's function tools without reasoning.
+      reasoning_effort: tools?.length ? "none" : undefined,
       max_completion_tokens: OPENAI_MAX_COMPLETION_TOKENS,
       temperature: OPENAI_TEMPERATURE,
     });
